@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arli Adem - Software Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            margin-bottom: 30px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-item a:hover {
+            color: #764ba2;
+        }
+
+        .section {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 2em;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .skill-category {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .skill-category h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+            border-bottom: 2px solid rgba(255,255,255,0.3);
+            padding-bottom: 8px;
+        }
+
+        .skill-category ul {
+            list-style: none;
+        }
+
+        .skill-category li {
+            padding: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .skill-category li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .app-showcase {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 25px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .app-showcase h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .app-link {
+            display: inline-block;
+            background: white;
+            color: #f5576c;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Arli Adem</h1>
+            <p class="subtitle">Software Developer & Mobile Application Developer</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    📱 <a href="tel:+905541580512">0554 158 05 12</a>
+                </div>
+                <div class="contact-item">
+                    ✉️ <a href="mailto:infoarli777@gmail.com">infoarli777@gmail.com</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>🚀 Teknik Yetenekler</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>İleri Seviye</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>Android Development</li>
+                        <li>Kotlin</li>
+                        <li>PostgreSQL</li>
+                        <li>Spring Boot</li>
+                        <li>Microservices</li>
+                        <li>React</li>
+                        <li>Docker</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Orta Seviye</h3>
+                    <ul>
+                        <li>C Programming</li>
+                        <li>REST API Design</li>
+                        <li>Database Design</li>
+                        <li>UI/UX Development</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Jenkins</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Agile Methodology</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Modern Teknolojiler</h3>
+                    <ul>
+                        <li>Yapay Zeka Entegrasyonu</li>
+                        <li>AI-Powered Development</li>
+                        <li>Machine Learning Basics</li>
+                        <li>Cloud Technologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📱 Projelerim</h2>
+            
+            <div class="app-showcase">
+                <h3>English Learning Application</h3>
+                <p>Android platformu için geliştirilmiş kapsamlı İngilizce öğrenme uygulaması. Modern teknolojiler kullanılarak oluşturulmuş, kullanıcı dostu arayüze sahip eğitim uygulaması.</p>
+                <a href="https://play.google.com/store/apps/details?id=com.arliadem.english&pcampaignid=web_share" target="_blank" class="app-link">
+                    Google Play'de Görüntüle →
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💼 Uzmanlık Alanları</h2>
+            <ul style="list-style: none; padding-left: 0;">
+                <li style="padding: 12px 0; font-size: 1.1em;">✓ <strong>Backend Development:</strong> Spring Boot ile mikro servis mimarisi, RESTful API tasarımı</li>
+                <li style="padding: 12px 0; font-size: 1.1em;">✓ <strong>Mobile Development:</strong> Native Android uygulamaları, Kotlin & Java</li>
+                <li style="padding: 12px 0; font-size: 1.1em;">✓ <strong>Database Management:</strong> PostgreSQL ile veri modelleme ve optimizasyon</li>
+                <li style="padding: 12px 0; font-size: 1.1em;">✓ <strong>DevOps:</strong> Jenkins ile CI/CD pipeline kurulumu, Docker konteynerizasyonu</li>
+                <li style="padding: 12px 0; font-size: 1.1em;">✓ <strong>AI Integration:</strong> Yapay zeka araçlarını geliştirme süreçlerine entegre etme</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>© 2024 Arli Adem - Tüm hakları saklıdır.</p>
+        </footer>
+    </div>
+</body>
+</html>
